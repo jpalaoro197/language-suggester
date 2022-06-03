@@ -11,6 +11,13 @@ $(document).ready(function() {
     const number4 = parseInt($("#add4").val());
     const number5 = parseInt($("#add5").val());
     const result = add(number1, number2, number3, number4, number5);
-    $("#answer").text(result);
+   
+    if (result <= 16) {
+      $("#answer1").show();
+    } else if (result >= 17 && result <= 31) {
+      $("#answer2").show();
+    } else if (result >= 32) {
+      $("#answer3").show();
+    }
   });
 });
