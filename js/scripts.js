@@ -13,16 +13,16 @@ $(document).ready(function() {
     const result = add(number1, number2, number3, number4, number5);
    
     if (result <= 16) {
-      $("#answer2").hide()
-      $("#answer3").hide()
-      $("#answer1").show() 
+      $("#answer2").hide();
+      $("#answer3").hide();
+      $("#answer1").show(); 
     } else if (result >= 17 && result <= 31) {
-      $("#answer1").hide()
-      $("#answer3").hide()
+      $("#answer1").hide();
+      $("#answer3").hide();
       $("#answer2").show();
     } else if (result >= 32) {
-      $("#answer1").hide()
-      $("#answer2").hide()
+      $("#answer1").hide();
+      $("#answer2").hide();
       $("#answer3").show();
     }
     
